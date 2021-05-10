@@ -62,11 +62,16 @@ for (key in zucchine){
 
 for (var i = 0; i < zucchine.length; i++){
     var questaZucchina = zucchine[i];
+
+    var pesoZucchine = [];
+    pesoZucchine.push(questaZucchina.peso);    
     console.log(questaZucchina.peso);
     document.getElementById('verdure').innerHTML += questaZucchina.peso + ' ';
-}
-
+};
 console.log(questaZucchina);
+console.log(pesoZucchine);
+
+
 
 
 //Calcola quanto pesano tutte le zucchine.
