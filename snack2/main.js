@@ -68,10 +68,23 @@ for (var i = 0; i < zucchine.length; i++){
     };
 };
 console.log(zucchineBig);
-
 console.log(zucchineSmall);
 
-document.getElementById('zucchine_lunghe').innerHTML += zucchineBig; /// PERCHE' mi da object object???
+/* document.getElementById('zucchine_lunghe').innerHTML += zucchineBig; /// PERCHE' mi da object object??? */
 //Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+var questaGranZucchina = 0;
+for (var i = 0; i < zucchineBig.length; i++){
+    var zucchineGr = zucchineBig[i];
+    console.log(`il peso delle zucchine grandi è ${zucchineGr.peso}`);
+    questaGranZucchina += zucchineGr.peso;
+}
+document.getElementById('zucchine_lunghe').innerHTML = `Il peso delle zucchine lunghe è ${questaGranZucchina} grammi.`
 
+var questaPiccolaZucchina = 0;
+for (var i = 0; i < zucchineSmall.length; i++){
+    var zucchinePic = zucchineSmall[i];
+    console.log(`il peso delle zucchine piccole è ${questaPiccolaZucchina}`);
+    questaPiccolaZucchina += zucchinePic.peso;
+};
+document.getElementById('zucchine_corte').innerHTML = `Il peso delle zucchine corte è ${questaPiccolaZucchina} grammi.`
 
