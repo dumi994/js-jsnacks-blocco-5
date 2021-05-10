@@ -53,25 +53,20 @@ var zucchine = [
         lunghezza: '8 cm',
     },
 
-]
+];
 console.log(zucchine);
 for (key in zucchine){
     var mario = zucchine[key];
     console.log(mario);
 };
 
+var pesoZucchine = 0;
 for (var i = 0; i < zucchine.length; i++){
     var questaZucchina = zucchine[i];
-
-    var pesoZucchine = [];
-    pesoZucchine.push(questaZucchina.peso);    
+    
     console.log(questaZucchina.peso);
-    document.getElementById('verdure').innerHTML += questaZucchina.peso + ' ';
+    pesoZucchine += questaZucchina.peso;
 };
-console.log(questaZucchina);
-console.log(pesoZucchine);
-
-
-
+document.getElementById('verdure').innerHTML = `il peso complessivo delle zucchine è ${pesoZucchine} grammi`;
 
 //Calcola quanto pesano tutte le zucchine.
