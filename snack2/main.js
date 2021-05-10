@@ -70,7 +70,6 @@ for (var i = 0; i < zucchine.length; i++){
 console.log(zucchineBig);
 console.log(zucchineSmall);
 
-/* document.getElementById('zucchine_lunghe').innerHTML += zucchineBig; /// PERCHE' mi da object object??? */
 //Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 var questaGranZucchina = 0;
 for (var i = 0; i < zucchineBig.length; i++){
