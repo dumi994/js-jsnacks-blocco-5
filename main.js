@@ -55,7 +55,18 @@ var zucchine = [
 
 ]
 console.log(zucchine);
+for (key in zucchine){
+    var mario = zucchine[key];
+    console.log(mario);
+};
 
+for (var i = 0; i < zucchine.length; i++){
+    var questaZucchina = zucchine[i];
+    console.log(questaZucchina.peso);
+    document.getElementById('verdure').innerHTML += questaZucchina.peso + ' ';
+}
+
+console.log(questaZucchina);
 
 
 //Calcola quanto pesano tutte le zucchine.
